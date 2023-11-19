@@ -4,29 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:ital@1&display=swap" rel="stylesheet">
     <title>Currency Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="converter">
-        <h2>Currency Converter</h2>
-        <label for="fromCurrency">From Currency:</label>
-        <input type="text" id="fromCurrency" placeholder="Enter currency code (e.g., USD)" />
+    <div class="box">
+        <h1>Currency Converter</h1>
 
-        <label for="toCurrency">To Currency:</label>
-        <input type="text" id="toCurrency" placeholder="Enter currency code (e.g., EUR)" />
-
-        <label for="amount">Amount:</label>
-        <input type="number" id="amount" placeholder="Enter amount" />
-
-        <button onclick="convertCurrency()">Convert</button>
-
+        <label for="fromCurrency">From Currency : </label>
+        <input type="text" id="fromCurrency" placeholder="Enter currency code (e.g., USD)">
+        <label for="toCurrency">To Currency : </label>
+        <input type="text" name="" id="toCurrency" placeholder="Enter currency code (e.g., EUR)">
+        <label for="amount">Amount : </label>
+        <input type="text" name="" id="amount" placeholder="Enter Amount">
         <div id="result"></div>
+        <button onclick="convertCurrency()">Convert Currency</button>
+        
     </div>
-
-
+    
     <script src="app.js"></script>
 </body>
 </html>
